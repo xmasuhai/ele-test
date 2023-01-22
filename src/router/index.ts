@@ -7,11 +7,11 @@ const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL), // createWebHistory()
   routes,
 })
-export default router
 
-// 导出安装
+export {router}
+
+// 导出安装方法
 /*
-
 export async function setupRouter(app: App): Promise<void> {
   app.use(router)
 }

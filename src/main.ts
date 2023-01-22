@@ -1,17 +1,26 @@
 import {createApp} from 'vue'
 import './style.css'
 import App from './App.vue'
-import router from '@/router'
+import {router} from '@/router'
+import {store} from '@/store'
 
 const app = createApp(App)
 app.use(router)
+app.use(store)
 app.mount('#app')
 
 /*
+// 逐个导出安装方法
+import { setupRouter } from './router'
+import { setupPiniaStore } from '@/store'
 function setupApp() {
+    // 挂载路由
     setupRouter(app)
+    // 挂载pinia状态管理
+    setupPiniaStore(app)
 
     //  setupXXX 未来可以有更多的插件加入
+
     // ....
     app.mount('#app')
 }

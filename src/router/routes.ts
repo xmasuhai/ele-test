@@ -11,6 +11,6 @@ export const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     meta: {hidden: true}, // 配置元素
-    component: () => import('@/components/HelloWorld.vue')
-  }
+    component: () => import('@/views/About.vue')
+  },
 ]
