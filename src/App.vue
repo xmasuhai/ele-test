@@ -1,11 +1,18 @@
-<script setup lang="ts" name="App">
+<script lang="ts" name="App" setup>
+import {ElConfigProvider} from 'element-plus'
+import {ref} from "vue"
+
+const zIndex = ref(3000)
+const size = 'small'
 </script>
 
 <template>
-  <router-link to="/">Home</router-link>
-  |
-  <router-link to="/about">About</router-link>
-  <router-view/>
+  <ElConfigProvider :size="size" :z-index="zIndex">
+    <router-link to="/">Home</router-link>
+    |
+    <router-link to="/about">About</router-link>
+    <router-view/>
+  </ElConfigProvider>
 </template>
 
 <style lang="scss" scoped>
