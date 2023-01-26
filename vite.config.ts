@@ -30,6 +30,7 @@ export default defineConfig({
           ],
         },
       ],
+      // UI
       resolvers: [ElementPlusResolver()],
       dts: true,
     }),
