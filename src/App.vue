@@ -11,6 +11,7 @@ const size = 'small'
     <router-link to="/">Home</router-link>
     |
     <router-link to="/about">About</router-link>
+    <!-- 路由占位符 -->
     <router-view/>
   </ElConfigProvider>
 </template>

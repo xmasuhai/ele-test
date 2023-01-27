@@ -1,11 +1,10 @@
-import {RouteRecordRaw} from "vue-router";
-import Home from "@/components/HelloWorld.vue";
+import {RouteRecordRaw} from "vue-router"
 
 export const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/login',
     name: 'Home',
-    component: Home
+    component: () => import('@/views/Login.vue')
   },
   {
     path: '/about',
