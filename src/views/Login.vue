@@ -10,9 +10,28 @@ const avatarRoundImgSrc: Ref<string> = ref(avatarRound)
   <div class="login-container">
     <HeaderMainFooter>
       <div class="login-box">
+        <!-- 头像区域 -->
         <div class="avatar-box">
           <img :src="avatarRoundImgSrc" alt="">
         </div>
+
+        <!-- 登录表单区域 -->
+        <el-form class="login-form">
+          <!-- 用户名 -->
+          <el-form-item class="form-input">
+            <el-input/>
+          </el-form-item>
+          <!-- 密码 -->
+          <el-form-item class="form-input">
+            <el-input/>
+          </el-form-item>
+          <!-- 按钮 -->
+          <el-form-item class="btns">
+            <el-button type="primary">登录</el-button>
+            <el-button type="info">重置</el-button>
+          </el-form-item>
+        </el-form>
+
       </div>
     </HeaderMainFooter>
   </div>
@@ -32,7 +51,9 @@ const avatarRoundImgSrc: Ref<string> = ref(avatarRound)
     height: 300px;
     background-color: #fff;
     border-radius: 10px;
+    position: relative;
 
+    // 头像区域
     .avatar-box {
       width: 125px;
       height: 125px;
@@ -49,6 +70,28 @@ const avatarRoundImgSrc: Ref<string> = ref(avatarRound)
         height: 100%;
         border-radius: 50%;
         background-color: #eee;
+      }
+    }
+
+    // 登录表单区域
+    .login-form {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 0 4em 1em;
+
+      // 表单-用户名
+      // 表单-密码
+      .form-input {
+        padding-bottom: 1em;
+      }
+
+      // 表单-按钮
+      .btns {
+        .el-form-item__content {
+          display: flex;
+          justify-content: flex-end;
+        }
       }
     }
 

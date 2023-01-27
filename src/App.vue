@@ -3,7 +3,7 @@ import {ElConfigProvider} from 'element-plus'
 import {ref} from "vue"
 
 const zIndex = ref(3000)
-const size = 'small'
+const size = 'default'
 </script>
 
 <template>
