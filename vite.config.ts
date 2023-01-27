@@ -68,5 +68,6 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.vue', '.json`'], // 导入时想要省略的扩展名列表
   }
 })

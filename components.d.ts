@@ -7,6 +7,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ElFooter: typeof import('element-plus/es')['ElFooter']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElMain: typeof import('element-plus/es')['ElMain']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     LayoutHeaderBodyFooter: typeof import('./src/components/layout/HeaderBodyFooter.vue')['default']
     LayoutHeaderMainFooter: typeof import('./src/components/layout/HeaderMainFooter.vue')['default']
