@@ -66,16 +66,33 @@ const props = withDefaults(defineProps<Props>(), {...})
 // import MyComp from './MyComp.vue' // in Parent Comp
 // const modal = ref<InstanceType<typeof MyModal> | null>(null)
 // const openModal = () => { modal.value?.open() }
+import HeaderMainFooter from "@/components/layout/HeaderMainFooter.vue";
 </script>
 
 <template>
-  <div class="red-border">
-    登录组件
+  <div class="login-container">
+    <HeaderMainFooter>
+      <div class="login-box">
+
+      </div>
+    </HeaderMainFooter>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.red-border {
-  border: 1px solid red;
+.login-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: #2b4b6b;
+  height: 100vh;
+  flex: 1 1 auto;
+
+  :deep(.login-box) {
+    width: 450px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
 }
 </style>

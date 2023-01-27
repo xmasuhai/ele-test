@@ -1,6 +1,7 @@
 import {createApp} from 'vue'
-import './style.css'
-import App from './App.vue'
+import App from '@/App.vue'
+// 全局样式表
+import '@/assets/style/global.css'
 import {router} from '@/router'
 import {store} from '@/store'
 
