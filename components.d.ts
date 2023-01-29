@@ -14,12 +14,7 @@ declare module '@vue/runtime-core' {
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElInput: typeof import('element-plus/es')['ElInput']
     ElMain: typeof import('element-plus/es')['ElMain']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    LayoutHeaderBodyFooter: typeof import('./src/components/layout/HeaderBodyFooter.vue')['default']
     LayoutHeaderMainFooter: typeof import('./src/components/layout/HeaderMainFooter.vue')['default']
-    Login: typeof import('./src/components/Login.vue')['default']
-    Logout: typeof import('./src/components/Logout/Logout.vue')['default']
-    Register: typeof import('./src/components/Register.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
